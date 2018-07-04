@@ -1,0 +1,29 @@
+
+<div class="container">
+
+	<input type="checkbox" (click) ="displayLowToHigh($event.target.checked,DataTable)"><legend>Arrange Based On Price</legend>
+	<div class="row">
+		<div class="col-4">
+			name
+		</div>
+		<div class="col-4">
+			Phone number
+		</div>
+		<div class="col-4">
+			price
+		</div>
+	</div>
+	<hr />
+	<div class="row" *ngFor = "let data of DataTable">
+		<div class="col-4">
+			{{data.name}}
+		</div>
+		<div class="col-4">
+			{{data.phonenumber}}
+		</div>
+		<div class="col-4">
+			{{data.price}}
+		</div>
+	</div>
+	<hr />
+</div>

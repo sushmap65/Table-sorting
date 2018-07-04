@@ -1,0 +1,20 @@
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand">Welcome</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" routerLink = '/contact'>Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink = "/setting">Settings</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Select</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" routerLink = "['/Admin']">Admin</a>
+        <a class="dropdown-item" routerLink = "['/User']">User</a>
+        <div role="separator" class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink = "['/guest']">Guest</a>
+      </div>
+    </li>
+  </ul>
+</nav>
